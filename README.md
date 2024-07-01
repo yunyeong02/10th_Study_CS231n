@@ -9,5 +9,6 @@
 
 해당 주차의 브랜치에 포스팅 글 링크 Pull requests 제출
 
-![image](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/414d23c9-e270-4e26-a172-8e4e97154e0f)
-![image](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/525510e9-bf28-4e4b-8e42-17349a6e7be2)
+![001](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/7f97178c-64e2-4757-9a73-21d4a2379ae1)
+![002](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/12ab60d2-ccb0-4ec2-b4d2-788d1d43c119)
+
