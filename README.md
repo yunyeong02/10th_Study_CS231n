@@ -1,5 +1,3 @@
-# 10th_Study_CS231n
-
 # 📚 쿠글 10기 CS231n 스터디
 
 ## 🧐 CS231n이란?
@@ -26,23 +24,9 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 ---
 
-## 유용한 링크들
+## 📅 커리큘럼
 
-[CS231n 강의 홈페이지](https://cs231n.stanford.edu/index.html)
-[원어 강의 링크](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)  
-[한국어 강의 링크](https://www.youtube.com/watch?v=3QjGtOlIiVI&list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5)  
-
-[과제 링크](https://cs231n.github.io/)
-
----
-
-이렇게 친근하게 표현할 수 있습니다. 추가로 필요한 내용이나 수정사항이 있다면 말씀해주세요!
-
----
-
-## 커리큘럼
-
-
+```markdown
 |  Week  |     Start Date     |      End Date      |      Description        |     Course Materials     |
 |--------|---------------------|---------------------|---------------------------|--------------------------|
 | Week 1 | 2024.07.08(Mon) | 2024.07.14(Sun) | 07/09 Lecture 1: Introduction Computer vision overview, Course overview, Course logistics | [slides 1] [slides 2] |
@@ -61,11 +45,5 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 |        |                     |                     | 08/22 Lecture 14: OpenAI Sora Guest Lecture by William (Bill) Peebles and Tim Brooks | |
 | Week 8 | 2024.08.26(Mon) | 2024.09.01(Sun) | 08/27 Lecture 15: Robot Learning Deep Reinforcement Learning, Model Learning, Robotic Manipulation | [slides] |
 |        |                     |                     | 08/29 Lecture 16: Human-Centered Artificial Intelligence | |
-
-
----
-
-
-![001](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/7f97178c-64e2-4757-9a73-21d4a2379ae1)
-![002](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/12ab60d2-ccb0-4ec2-b4d2-788d1d43c119)
+```
 
