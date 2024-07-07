@@ -19,7 +19,6 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 [🎥 원어 강의 링크](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)  
 [🇰🇷 한국어 강의 링크](https://www.youtube.com/watch?v=3QjGtOlIiVI&list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5)  
-
 [📂 과제 링크](https://cs231n.github.io/)
 
 ---
