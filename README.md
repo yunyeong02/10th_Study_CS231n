@@ -26,7 +26,7 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 ## 📅 커리큘럼
 
-```markdown
+
 |  Week  |     Start Date     |      End Date      |      Description        |     Course Materials     |
 |--------|---------------------|---------------------|---------------------------|--------------------------|
 | Week 1 | 2024.07.08(Mon) | 2024.07.14(Sun) | 07/09 Lecture 1: Introduction Computer vision overview, Course overview, Course logistics | [slides 1] [slides 2] |
@@ -45,5 +45,5 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 |        |                     |                     | 08/22 Lecture 14: OpenAI Sora Guest Lecture by William (Bill) Peebles and Tim Brooks | |
 | Week 8 | 2024.08.26(Mon) | 2024.09.01(Sun) | 08/27 Lecture 15: Robot Learning Deep Reinforcement Learning, Model Learning, Robotic Manipulation | [slides] |
 |        |                     |                     | 08/29 Lecture 16: Human-Centered Artificial Intelligence | |
-```
+
 
