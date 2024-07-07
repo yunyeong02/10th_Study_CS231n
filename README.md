@@ -32,6 +32,7 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 ## 커리큘럼
 
+
 |  Week  |     Start Date     |      End Date      |      Description        |     Course Materials     |
 |--------|---------------------|---------------------|---------------------------|--------------------------|
 | Week 1 | 2024.07.08(Mon) | 2024.07.14(Sun) | 07/09 Lecture 1: Introduction Computer vision overview, Course overview, Course logistics | [slides 1] [slides 2] |
@@ -52,7 +53,7 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 |        |                     |                     | 08/29 Lecture 16: Human-Centered Artificial Intelligence | |
 
 
-
+---
 
 
 ![001](https://github.com/konkuk-kuggle/10th_Study_CS231n/assets/66872094/7f97178c-64e2-4757-9a73-21d4a2379ae1)
