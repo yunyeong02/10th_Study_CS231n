@@ -11,6 +11,9 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 해당 주차의 브랜치에 포스팅 글 링크를 Pull requests로 제출하시면 됩니다!
 
+## 💬 스터디의 효과
+다른 사람이 정리한 블로그 링크를 보면서 다양한 생각을 공유하고, 같은 강의를 들으며 궁금한 점이나 모르는 부분을 질문하여 학습 효과를 증가시킬 수 있습니다. 
+
 ---
 
 ## 🔗 유용한 링크들
@@ -19,6 +22,7 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 
 [🎥 원어 강의 링크](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)  
 [🇰🇷 한국어 강의 링크](https://www.youtube.com/watch?v=3QjGtOlIiVI&list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5)  
+
 [📂 과제 링크](https://cs231n.github.io/)
 
 ---
@@ -44,5 +48,3 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 |        |                     |                     | 08/22 Lecture 14: OpenAI Sora Guest Lecture by William (Bill) Peebles and Tim Brooks | |
 | Week 8 | 2024.08.26(Mon) | 2024.09.01(Sun) | 08/27 Lecture 15: Robot Learning Deep Reinforcement Learning, Model Learning, Robotic Manipulation | [slides] |
 |        |                     |                     | 08/29 Lecture 16: Human-Centered Artificial Intelligence | |
-
-
