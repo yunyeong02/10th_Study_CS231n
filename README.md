@@ -50,6 +50,21 @@ CS231n은 스탠포드 대학교에서 제공하는 '딥 러닝을 활용한 컴
 | Week 8 | 2024.08.26(Mon) | 2024.09.01(Sun) | 08/27 Lecture 15: Robot Learning Deep Reinforcement Learning, Model Learning, Robotic Manipulation | [slides](https://cs231n.stanford.edu/slides/2024/lecture_14.pdf) |
 |        |                     |                     | 08/29 Lecture 16: Human-Centered Artificial Intelligence | |
 
+## 📋 과제 제출 확인
+
+|  Week  | 김동환 | 김명훈 | 우동협 | 장윤영 | 진태완 | 최종렬 | 한서연 |
+|--------|--------|--------|--------|--------|--------|--------|--------|
+| Week 1 |        |        |        |        |        |        |        |
+| Week 2 |        |        |        |        |        |        |        |
+| Week 3 |        |        |        |        |        |        |        |
+| Week 4 |        |        |        |        |        |        |        |
+| Week 5 |        |        |        |        |        |        |        |
+| Week 6 |        |        |        |        |        |        |        |
+| Week 7 |        |        |        |        |        |        |        |
+| Week 8 |        |        |        |        |        |        |        |
+
+미제출 시 환급금이 1만원씩 차감됩니다.
+
 
 ---
 
