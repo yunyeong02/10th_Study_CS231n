@@ -35,7 +35,7 @@ jobs:
       - name: Run update script
         run: python update_submission_status.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
           GITHUB_HEAD_REF: ${{ env.PR_TITLE }}
           GITHUB_EVENT_PR_CREATED_AT: ${{ env.PR_CREATED_AT }}
           WEEK: ${{ env.WEEK }}
