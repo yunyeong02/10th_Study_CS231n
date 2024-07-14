@@ -2,7 +2,8 @@ name: Update Submission Status
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    branches:
+      - '*'  # 모든 브랜치에서 PR이 열릴 때 트리거
 
 jobs:
   update_status:
