@@ -17,7 +17,7 @@ repo = g.get_repo(f"{REPO_OWNER}/{REPO_NAME}")
 
 # PR 제목에서 주차와 참여자 이름 추출하는 함수
 def extract_info_from_title(title):
-    match = re.match(r"Week_(\d+)\s+(.*)", title)
+    match = re.match(r"Week_([0-9]+)_(.*)", title)
     if match:
         week = int(match.group(1))
         name = match.group(2).strip()
@@ -42,7 +42,8 @@ def update_submission_status(week, name):
         file.writelines(new_lines)
 
     # README.md 파일 커밋 및 푸시
-    repo.update_file("README.md", f"Update submission status for Week {week}, {name}", ''.join(new_lines), repo.get_contents("README.md").sha)
+    contents = repo.get_contents("README.md")
+    repo.update_file(contents.path, f"Update submission status for Week {week}, {name}", ''.join(new_lines), contents.sha)
 
 # PR 이벤트 처리 함수
 def handle_pr_event():
