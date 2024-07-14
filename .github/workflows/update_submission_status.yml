@@ -26,9 +26,13 @@ jobs:
         run: |
           echo "PR_TITLE=${{ github.event.pull_request.title }}" >> $GITHUB_ENV
           echo "PR_CREATED_AT=${{ github.event.pull_request.created_at }}" >> $GITHUB_ENV
+          echo "PR Title: ${{ github.event.pull_request.title }}"
+          echo "PR Created At: ${{ github.event.pull_request.created_at }}"
           if [[ "${{ github.event.pull_request.title }}" =~ ^Week_([0-9]+)\ (.*)$ ]]; then
             echo "WEEK=${BASH_REMATCH[1]}" >> $GITHUB_ENV
             echo "PARTICIPANT=${BASH_REMATCH[2]}" >> $GITHUB_ENV
+            echo "Extracted WEEK: ${BASH_REMATCH[1]}"
+            echo "Extracted PARTICIPANT: ${BASH_REMATCH[2]}"
           else
             echo "Invalid PR title format"
             exit 1
