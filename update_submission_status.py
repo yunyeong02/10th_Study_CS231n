@@ -6,8 +6,8 @@ from github import Github
 
 # 환경 변수에서 GitHub 토큰 가져오기
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-REPO_OWNER = 'repo_owner'
-REPO_NAME = 'repo_name'
+REPO_OWNER = 'forwarder1121'
+REPO_NAME = '10th_Study_CS231n'
 
 # 참여 인원 목록
 participants = ["김동환", "김명훈", "우동협", "장윤영", "진태완", "최종렬", "한서연"]
