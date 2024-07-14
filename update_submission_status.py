@@ -1,16 +1,15 @@
 import os
 import re
-import requests
 from datetime import datetime
 from github import Github
 
 # 환경 변수에서 GitHub 토큰 가져오기
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-REPO_OWNER = 'forwarder1121'
-REPO_NAME = '10th_Study_CS231n'
+GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
+REPO_OWNER = 'forwarder1121'  
+REPO_NAME = '10th_Study_CS231n'  
 
 # 참여 인원 목록
-participants = ["김동환", "김명훈", "우동협", "장윤영", "진태완", "최종렬", "한서연"]
+participants = ["김동환", "우동협", "장윤영", "정명훈", "진태완", "최종렬", "한서연"]
 
 # GitHub API 클라이언트 생성
 g = Github(GITHUB_TOKEN)
@@ -35,12 +34,15 @@ def update_submission_status(week, name):
     for line in lines:
         if f"| Week {week} |" in line:
             for participant in participants:
-                if participant == name and f"| {participant} " in line:
-                    line = line.replace(f"| {participant} ", f"|    ✅    | {participant} ")
+                if participant == name:
+                    line = line.replace(f"|          |", f"|    ✅    |", 1)
         new_lines.append(line)
 
     with open('README.md', 'w') as file:
         file.writelines(new_lines)
+
+    # README.md 파일 커밋 및 푸시
+    repo.update_file("README.md", f"Update submission status for Week {week}, {name}", ''.join(new_lines), repo.get_contents("README.md").sha)
 
 # PR 이벤트 처리 함수
 def handle_pr_event():
