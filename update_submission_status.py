@@ -8,6 +8,8 @@ GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
 REPO_OWNER = 'konkuk-kuggle'
 REPO_NAME = '10th_Study_CS231n'
 
+print(f"GITHUB_TOKEN: {GITHUB_TOKEN is not None}")  # 토큰 존재 여부 확인
+
 # 참여 인원 목록
 participants = ["김동환", "우동협", "장윤영", "정명훈", "진태완", "최종렬", "한서연"]
 
@@ -24,8 +26,12 @@ weeks = {
 }
 
 # GitHub API 클라이언트 생성
-g = Github(GITHUB_TOKEN)
-repo = g.get_repo(f"{REPO_OWNER}/{REPO_NAME}")
+try:
+    g = Github(GITHUB_TOKEN)
+    repo = g.get_repo(f"{REPO_OWNER}/{REPO_NAME}")
+except Exception as e:
+    print(f"Error initializing GitHub client: {e}")
+    raise
 
 # PR 제목에서 주차와 참여자 이름 추출하는 함수
 def extract_info_from_title(title):
