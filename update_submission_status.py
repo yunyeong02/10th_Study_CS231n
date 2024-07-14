@@ -17,7 +17,7 @@ repo = g.get_repo(f"{REPO_OWNER}/{REPO_NAME}")
 
 # PR 제목에서 주차와 참여자 이름 추출하는 함수
 def extract_info_from_title(title):
-    match = re.match(r"Week_([0-9]+)_(.*)", title)
+    match = re.match(r"Week_([0-9]+)\s+(.*)", title)
     if match:
         week = int(match.group(1))
         name = match.group(2).strip()
