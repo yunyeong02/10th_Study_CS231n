@@ -36,7 +36,6 @@ jobs:
           else
             echo "Invalid PR title format"
             exit 1
-          fi
 
       - name: Check GITHUB_TOKEN
         run: echo "MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}"
