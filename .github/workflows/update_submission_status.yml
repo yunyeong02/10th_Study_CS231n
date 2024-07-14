@@ -2,7 +2,7 @@ name: Update Submission Status
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
 
 jobs:
   update_status:
@@ -38,3 +38,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_HEAD_REF: ${{ env.PR_TITLE }}
           GITHUB_EVENT_PR_CREATED_AT: ${{ env.PR_CREATED_AT }}
+          WEEK: ${{ env.WEEK }}
+          PARTICIPANT: ${{ env.PARTICIPANT }}
