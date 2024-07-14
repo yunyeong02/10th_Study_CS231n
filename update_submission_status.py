@@ -38,6 +38,7 @@ def extract_info_from_title(title):
 
 # 제출 상태 업데이트 함수
 def update_submission_status(week, name):
+    print(f"Updating submission status for Week {week}, {name}")
     with open('README.md', 'r') as file:
         lines = file.readlines()
 
@@ -61,6 +62,7 @@ def update_submission_status(week, name):
 def handle_pr_event():
     pr_title = os.getenv('GITHUB_HEAD_REF', '')
     pr_created_at = datetime.strptime(os.getenv('GITHUB_EVENT_PR_CREATED_AT'), "%Y-%m-%dT%H:%M:%SZ")
+    print(f"PR Title: {pr_title}, Created At: {pr_created_at}")
 
     week, name = extract_info_from_title(pr_title)
     if week and name:
