@@ -3,7 +3,7 @@ name: Update Submission Status
 on:
   pull_request:
     branches:
-      - '*'  # 모든 브랜치에서 PR이 열릴 때 트리거
+      - '*'
 
 jobs:
   update_status:
@@ -37,6 +37,9 @@ jobs:
             echo "Invalid PR title format"
             exit 1
           fi
+
+      - name: Check GITHUB_TOKEN
+        run: echo "MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}"
 
       - name: Run update script
         run: python update_submission_status.py
