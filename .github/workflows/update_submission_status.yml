@@ -36,6 +36,7 @@ jobs:
           else
             echo "Invalid PR title format"
             exit 1
+          fi
 
       - name: Run update script
         run: python update_submission_status.py
