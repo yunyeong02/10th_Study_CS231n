@@ -5,11 +5,23 @@ from github import Github
 
 # 환경 변수에서 GitHub 토큰 가져오기
 GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
-REPO_OWNER = 'your_repo_owner'  # 리포지토리 소유자 이름으로 바꾸세요
-REPO_NAME = 'your_repo_name'    # 리포지토리 이름으로 바꾸세요
+REPO_OWNER = 'konkuk-kuggle'
+REPO_NAME = '10th_Study_CS231n'
 
 # 참여 인원 목록
 participants = ["김동환", "우동협", "장윤영", "정명훈", "진태완", "최종렬", "한서연"]
+
+# 주차별 시작 날짜와 종료 날짜
+weeks = {
+    1: ('2024-07-08', '2024-07-14'),
+    2: ('2024-07-15', '2024-07-21'),
+    3: ('2024-07-22', '2024-07-28'),
+    4: ('2024-07-29', '2024-08-04'),
+    5: ('2024-08-05', '2024-08-11'),
+    6: ('2024-08-12', '2024-08-18'),
+    7: ('2024-08-19', '2024-08-25'),
+    8: ('2024-08-26', '2024-09-01'),
+}
 
 # GitHub API 클라이언트 생성
 g = Github(GITHUB_TOKEN)
@@ -49,18 +61,21 @@ def update_submission_status(week, name):
 def handle_pr_event():
     pr_title = os.getenv('GITHUB_HEAD_REF', '')
     pr_created_at = datetime.strptime(os.getenv('GITHUB_EVENT_PR_CREATED_AT'), "%Y-%m-%dT%H:%M:%SZ")
-    pr_cutoff_time = datetime.strptime(f"{pr_created_at.year}-07-08T23:59:00Z", "%Y-%m-%dT%H:%M:%SZ")
 
-    # PR이 기한 내에 생성되었는지 확인
-    if pr_created_at <= pr_cutoff_time:
-        week, name = extract_info_from_title(pr_title)
-        if week and name:
+    week, name = extract_info_from_title(pr_title)
+    if week and name:
+        start_date, end_date = weeks[week]
+        start_datetime = datetime.strptime(start_date, "%Y-%m-%d")
+        end_datetime = datetime.strptime(end_date + ' 23:59:59', "%Y-%m-%d %H:%M:%S")
+
+        # PR 생성 시간이 해당 주차의 시작 날짜와 종료 날짜 사이인지 확인
+        if start_datetime <= pr_created_at <= end_datetime:
             update_submission_status(week, name)
             print(f"Updated submission status for {name} in Week {week}")
         else:
-            print("PR title format is incorrect")
+            print(f"PR was created outside the valid date range for Week {week}")
     else:
-        print("PR was created after the cutoff time")
+        print("PR title format is incorrect")
 
 if __name__ == "__main__":
     handle_pr_event()
